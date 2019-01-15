@@ -29,7 +29,7 @@ Restic backup based on take copy from all data first time and after that it take
         
         => restic -r sftp:backup-server:/opt/bc-incubaid/ init  # This will initialize repo over (sftp) backup server, passwd u created should be remembered else data will be loss
         
-        => echo "dc106401468b6b" > pass.txt
+        => echo "passwd" > pass.txt
         
         =>  restic --password-file pass.txt -r sftp:backup-server:/opt/bc-incubaid list snapshots
         
